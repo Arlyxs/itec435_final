@@ -17,10 +17,6 @@ import { CritiquesComponent } from './critiques/critiques.component';
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [
-    AppComponent,
-    MoviesComponent,
-    CritiquesComponent
-  ]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
