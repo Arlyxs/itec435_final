@@ -1,1 +1,16 @@
-{{movie}}
+<h2>Movie List</h2>
+<ul>
+    <li *NgFor="let movie of movies">
+       <span>{{movie.Name}}</span>
+       <span>{{movie.genre}}</span>
+       <span>{{movie.ReleseDate}}</span>
+       <span>{{movie.Rating}}</span>
+       <span>{{movie.UserScore}}</span>
+       <span>{{movie.Metascore}}</span>
+       <span>{{movie.Length}}</span>
+       <span>{{movie.Description}}</span>
+
+    </li>
+</ul>
+
+

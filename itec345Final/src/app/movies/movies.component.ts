@@ -7,7 +7,7 @@ import {MOVIES} from '../movie-list';
   styleUrls: ['./movies.component.css']
 })
 export class MoviesComponent implements OnInit {
-  movie = '300 Rise of Empire';
+  movies = MOVIES;
 
   constructor() { }
 
