@@ -1,4 +1,4 @@
-import {Critique} from './critique':
+/* import {Critique} from './critique':
 
 export const CRITIQUES: Critique[] = [
 	<blackpanther-list BPcritique ="[
@@ -408,4 +408,4 @@ export const CRITIQUES: Critique[] = [
 		}
 		
 	]"></Suicidsquad-list>
-]
+] */

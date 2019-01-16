@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MOVIES} from '../movie-list';
+import {Movie} from '../movie';
 
 @Component({
   selector: 'app-movies',
@@ -7,7 +7,10 @@ import {MOVIES} from '../movie-list';
   styleUrls: ['./movies.component.css']
 })
 export class MoviesComponent implements OnInit {
-  movies = MOVIES;
+  movie: Movie = {
+    id: 1,
+    name: 'Windstorm'
+  } ;
 
   constructor() { }
 

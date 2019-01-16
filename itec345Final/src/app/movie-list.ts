@@ -1,7 +1,7 @@
-import {
+/* import {
     Movie
-  } from './movies';:
-  
+  } from './movies';
+
   export const MOVIES: Movie[] = [{
       Name: 'Black Pather',
       Genre: 'Fantasy',
@@ -210,4 +210,4 @@ import {
     }
   
   ]
-  
+   */
