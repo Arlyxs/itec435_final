@@ -23,10 +23,16 @@ export class MoviesComponent implements OnInit {
   }; */
 
   movies = MOVIES;
+  selectedMovie: Movie;
+
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSelect(movie: Movie): void{
+    this.selectedMovie = movie;
   }
 
 }
