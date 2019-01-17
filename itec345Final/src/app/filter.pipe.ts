@@ -13,4 +13,4 @@ export class FilterPipe implements PipeTransform {
     }
 }
 
-/* code snippet credit due to  https://codeburst.io/create-a-search-pipe-to-dynamically-filter-results-with-angular-4-21fd3a5bec5c */
+/* code snippet elements credit due to  https://stackoverflow.com/questions/47017194/how-to-filter-based-on-property-value-in-an-array-of-objects-in-angular2 */
