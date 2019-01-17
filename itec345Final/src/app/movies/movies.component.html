@@ -17,35 +17,20 @@
 </div> 
 -->
 <div id="main">
-<div id="leftie">
-<h2><strong>Movie List</strong></h2>
-    <!--iterates over the movie list-->
-    <ul class="heroes">
-        <li *ngFor="let movie of movies" (click)="onSelect(movie)">
-            <span>{{movie.name}}</span>
-        </li>
-    </ul><!--ul movies class ends-->   
-</div>        
-        
-<div id="rightie" *ngIf="selectedMovie">        
-    <img [src]="selectedMovie.imageUrl" alt="{{selectedMovie.name}}"align="left">
-    <h3>{{selectedMovie.name}}</h3>
-    <span><b>Genre:</b> {{selectedMovie.genre}}</span><br>
-    <span><b>Release Date:</b> {{selectedMovie.releaseDate}}</span><br>
-    <span><b>Rating:</b> {{selectedMovie.rating}}</span><br>
-    <span><b>User Score:</b> {{selectedMovie.userScore}}</span><br>
-    <span><b>Meta Score:</b> {{selectedMovie.metaScore}}</span><br>
-    <span><b>Duration:</b> {{selectedMovie.length}}mins</span><br>
-    <span>{{selectedMovie.description}}</span><br>
     <div>
-        <label>name:
-            <input [(ngModel)]="selectedMovie.name" placeholder="name">
-        </label>
+        <h2><strong>Movie List</strong></h2>
+            <!--iterates over the movie list-->
+            <ul class="heroes">
+                <li *ngFor="let movie of movies" [class.selected]="hero === selectedHero" (click)="onSelect(movie)">
+                    <span class="badge">{{movie.name}}</span>
+                </li>
+            </ul><!--ul movies class ends-->
     </div>
-        
-</div> <!--ngIf ends-->
+    
+    <div>
+        <app-movies-detail [movie]="selectedMovie"></app-movies-detail>
+    </div>
 
-
-</div>
+</div> <!--div id man ends-->
 
 

@@ -1,18 +1,28 @@
+#main{
+    display: flex;
+}
+
+#main div{
+    flex-grow: 10;
+    flex-shrink: 10;
+    flex-basis: 450px;
+}
+
 img{
     width: 140px;
     height: 190px;
     padding-right: 5px;
     
 }
-div #content{
-    text-align: justify;
-    width: 300px;
-}
 ul.movies{
     text-align: justify;
 }
 li{
     list-style-type: none;
+}
+.selected{
+    background-color: rgb(79, 124, 143) !important;
+    color: white;
 }
 
 .heroes {
@@ -32,7 +42,7 @@ li{
   }
   
   .heroes li:hover {
-    color: #607D8B;
+    color: rgb(3, 6, 7);
     background-color: #DDD;
     left: .1em;
   }
@@ -88,18 +98,5 @@ li{
     color: white;
   }
 
-  #leftie{
-    display: table-caption;
-}
-
-  #main{
-      display: flex;
-  }
-
-  #main div{
-      flex-grow: 10;
-      flex-shrink: 10;
-      flex-basis: 450px;
-  }
   
  
