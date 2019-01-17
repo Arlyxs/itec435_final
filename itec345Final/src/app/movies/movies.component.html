@@ -1,11 +1,20 @@
-<h2>{{movie.name | uppercase}} Details</h2>
-    
-    <div><span>id: </span>{{movie.id}}</div>
-    <div>
+<div id="container">
+    <div id="content">
+        <img [src]="movie.imageUrl" alt="{{movie.name}}">
         <label>name:
             <input [(ngModel)]="movie.name" placeholder="name">
         </label>
-    </div>
+        <h2>{{movie.name | uppercase}} Details</h2>
+            <span>Genre: {{movie.genre}}</span><br>
+            <span>Release Date: {{movie.releaseDate}}</span><br>
+            <span>Rating: {{movie.rating}}</span><br>
+            <span>User Score: {{movie.userScore}}</span><br>
+            <span>Meta Score: {{movie.metaScore}}</span><br>
+            <span>Length: {{movie.length}}hrs</span><br>
+            <span>Description: {{movie.description}}</span><br>
+    </div> <!--div content ends-->
+
+</div> <!--div container ends-->
 <!-- 
 <h2>Movie List</h2>
 <ul>

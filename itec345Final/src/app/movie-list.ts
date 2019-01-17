@@ -1,6 +1,6 @@
 /* import {
     Movie
-  } from './movies';
+  } from './movie';
 
   export const MOVIES: Movie[] = [{
       Name: 'Black Pather',
