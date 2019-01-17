@@ -8,12 +8,6 @@
     flex-basis: 450px;
 }
 
-img{
-    width: 140px;
-    height: 190px;
-    padding-right: 5px;
-    
-}
 ul.movies{
     text-align: justify;
 }
