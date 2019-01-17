@@ -219,6 +219,6 @@ import { Movie } from './movie';
       userScore: 6.1,
       metaScore: 40,
       length: 123,
-      description: 'It feels good to be badÖ Assemble a team of the worldís most dangerous, incarcerated Super-Villains, provide them with the most powerful arsenal at the governmentís disposal, and send them off on a mission to defeat an enigmatic, insuperable entity. U.S. intelligence officer Amanda Waller has determined only a secretly convened group of disparate, despicable individuals with next to nothing to lose will do. However, once they realize they werenít picked to succeed but chosen for their patent culpability when they inevitably fail, will the Suicide Squad resolve to die trying, or decide itís every man for himself?'
+      description: 'It feels good to be bad! Assemble a team of the worldís most dangerous, incarcerated Super-Villains, provide them with the most powerful arsenal at the governmentís disposal, and send them off on a mission to defeat an enigmatic, insuperable entity. U.S. intelligence officer Amanda Waller has determined only a secretly convened group of disparate, despicable individuals with next to nothing to lose will do. However, once they realize they werenít picked to succeed but chosen for their patent culpability when they inevitably fail, will the Suicide Squad resolve to die trying, or decide itís every man for himself?'
     },
   ];

@@ -1,9 +1,16 @@
 img{
     width: 100px;
     height: 150px;
+    padding-right: 5px;
     
 }
 div #content{
     text-align: justify;
     width: 300px;
+}
+ul.movies{
+    text-align: justify;
+}
+li{
+    list-style-type: none;
 }

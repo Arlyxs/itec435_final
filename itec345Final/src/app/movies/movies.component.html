@@ -1,4 +1,5 @@
-<div id="container">
+<!-- 
+    <div id="container">
     <div id="content">
         <img [src]="movie.imageUrl" alt="{{movie.name}}">
         <label>name:
@@ -12,23 +13,25 @@
             <span>Meta Score: {{movie.metaScore}}</span><br>
             <span>Length: {{movie.length}}mins</span><br>
             <span>Description: {{movie.description}}</span><br>
-    </div> <!--div content ends-->
+    </div> 
+</div> 
+-->
 
-</div> <!--div container ends-->
-<!-- 
-<h2>Movie List</h2>
-<ul>
-    <li *NgFor="let movie of movies">
-       <span>{{movie.Name}}</span>
-       <span>{{movie.genre}}</span>
-       <span>{{movie.ReleseDate}}</span>
-       <span>{{movie.Rating}}</span>
-       <span>{{movie.UserScore}}</span>
-       <span>{{movie.Metascore}}</span>
-       <span>{{movie.Length}}</span>
-       <span>{{movie.Description}}</span>
-
+<h2><strong>Movie List</strong></h2>
+<!--iterates over the movie list-->
+<ul class="movies">
+    <li *ngFor="let movie of movies">
+        <img [src]="movie.imageUrl" alt="{{movie.name}}"align="left">
+        <h3>{{movie.name}}</h3>
+        <span><b>Genre:</b> {{movie.genre}}</span><br>
+        <span><b>Release Date:</b> {{movie.releaseDate}}</span><br>
+        <span><b>Rating:</b> {{movie.rating}}</span><br>
+        <span><b>User Score:</b> {{movie.userScore}}</span><br>
+        <span><b>Meta Score:</b> {{movie.metaScore}}</span><br>
+        <span><b>Duration:</b> {{movie.length}}mins</span><br>
+        <span>{{movie.description}}</span><br><br>
     </li>
-</ul> -->
+</ul><!--ul movies class ends-->
+
 
 
