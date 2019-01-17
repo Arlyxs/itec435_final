@@ -19,9 +19,21 @@
 <div id="main">
     <div>
         <h2><strong>Movie List</strong></h2>
+
+        <!--creates a search box-->
+        <div>
+            <label>search:
+                <input [(ngModel)]="searchText" placeholder="enter search text here">
+            </label>
+            <ul *ngIf="movieSearch">
+                <li *ngFor="let movie of movies | filterByMovie : movieSearch">
+                    <span>{{movie.name}}</span>
+                </li>
+            </ul>
+        </div>
             <!--iterates over the movie list-->
             <ul class="heroes">
-                <li *ngFor="let movie of movies" [class.selected]="hero === selectedHero" (click)="onSelect(movie)">
+                <li *ngFor="let movie of movies | filterByMovie : movieSearch" [class.selected]="hero === selectedHero" (click)="onSelect(movie)">
                     <span class="badge">{{movie.name}}</span>
                 </li>
             </ul><!--ul movies class ends-->
