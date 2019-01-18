@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { MoviesComponent } from './movies/movies.component';
 import { CritiquesComponent } from './critiques/critiques.component';
 import { MoviesDetailComponent } from './movies-detail/movies-detail.component';
+import { SortByDatePipe } from './sort-by-date.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { MoviesDetailComponent } from './movies-detail/movies-detail.component';
     MoviesComponent,
     CritiquesComponent,
     MoviesDetailComponent,
-    FilterPipe
+    FilterPipe,
+    SortByDatePipe
   ],
   imports: [
     BrowserModule,
@@ -26,5 +28,4 @@ import { MoviesDetailComponent } from './movies-detail/movies-detail.component';
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  FilterPipe;
  }
