@@ -17,32 +17,33 @@
 </div> 
 -->
 <div id="main">
-    <div>
-        <h2><strong>Movie List</strong></h2>
+  <div>
+    <h2><strong>Movie List</strong></h2>
 
-        <!--creates a search box-->
-        <div>
-            <label>search:
-                <input [(ngModel)]="movieSearch" placeholder="enter search text here">
-            </label>
-            <ul *ngIf="searchText">
-                <li *ngFor="let movie of movies | filterByMovie: 'searchText'">
-                    <span>{{movie.name}}</span>
-                </li>
-            </ul>
-        </div>
-            <!--iterates over the movie list-->
-            <ul class="heroes">
-                <li *ngFor="let movie of movies | sortByDate: 'movdate'" [class.selected]="hero === selectedHero" (click)="onSelect(movie)">
-                    <span>{{movie.name}}</span>
-                </li>
-            </ul><!--ul movies class ends-->
-    </div>
-    
+    <!--creates a search box-->
     <div>
-        <app-movies-detail [movie]="selectedMovie"></app-movies-detail>
+      <label>search:
+        <input [(ngModel)]="movieSearch" placeholder="enter search text here">
+      </label>
+      <ul *ngIf="searchText">
+        <li *ngFor="let movie of movies | filterByMovie: 'searchText'">
+          <span>{{movie.name}}</span>
+        </li>
+      </ul>
     </div>
 
-</div> <!--div id man ends-->
+    <!--iterates over the movie list-->
+    <ul class="heroes">
+      <li *ngFor="let movie of movies | sortByDate: 'movdate'" [class.selected]="hero === selectedHero" (click)="onSelect(movie)">
+        <span>{{movie.name}}</span>
+      </li>
+    </ul>
+    <!--ul movies class ends-->
+  </div>
 
+  <div>
+    <app-movies-detail [movie]="selectedMovie"></app-movies-detail>
+  </div>
 
+</div>
+<!--div id man ends-->
