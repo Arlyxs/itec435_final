@@ -21,14 +21,14 @@ li {
   color: white;
 }
 
-.heroes {
+.movs {
   margin: 0 0 2em 0;
   list-style-type: none;
   padding: 0;
   width: 15em;
 }
 
-.heroes li {
+.movs li {
   position: relative;
   cursor: pointer;
   background-color: #EEE;
@@ -38,13 +38,13 @@ li {
   border-radius: 4px;
 }
 
-.heroes li:hover {
+.movs li:hover {
   color: rgb(3, 6, 7);
   background-color: #DDD;
   left: .1em;
 }
 
-.heroes a {
+.movs a {
   color: #888;
   text-decoration: none;
   position: relative;
@@ -52,11 +52,11 @@ li {
   width: 250px;
 }
 
-.heroes a:hover {
+.movs a:hover {
   color: #607D8B;
 }
 
-.heroes .badge {
+.movs .badge {
   display: inline-block;
   font-size: small;
   color: white;
