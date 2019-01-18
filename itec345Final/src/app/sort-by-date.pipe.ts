@@ -9,7 +9,7 @@ export class SortByDatePipe implements PipeTransform {
     if (!Array.isArray(array)) {
       return;
     }
-    array.sort((a: any, b: any) => {
+    array.sort((a: Date, b: Date) => {
       if (a[field] < b[field]) {
         return -1;
       } else if (a[field] > b[field]) {
