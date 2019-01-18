@@ -1,5 +1,4 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { filterQueryId } from '@angular/core/src/view/util';
 @Pipe({
   name: 'filterByMovie'
 })
@@ -14,3 +13,4 @@ export class FilterPipe implements PipeTransform {
 }
 
 /* code snippet elements credit due to  https://stackoverflow.com/questions/47017194/how-to-filter-based-on-property-value-in-an-array-of-objects-in-angular2 */
+

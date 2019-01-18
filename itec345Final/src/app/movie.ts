@@ -2,7 +2,7 @@ export class Movie {
     imageUrl: string;
     name: string;
     genre: string;
-    releaseDate: string;
+    releaseDate: Date;
     rating: string;
     userScore: number;
     metaScore: number;
