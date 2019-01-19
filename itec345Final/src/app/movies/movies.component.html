@@ -23,7 +23,7 @@
     <!--creates a search box-->
     <div>
       <label>search:
-        <input [(ngModel)]="movieSearch" placeholder="enter search text here">
+        <input [(ngModel)]="searchText" placeholder="enter search text here">
       </label>
       <ul *ngIf="searchText">
         <li *ngFor="let movie of movies | filterByMovie: 'searchText'">
@@ -34,8 +34,8 @@
 
     <!--iterates over the movie list-->
     <ul class="movs">
-      <li *ngFor="let movie of movies | sortByDate: 'movdate'" [class.selected]="movs === selectedHero" (click)="onSelect(movie)">
-        <span>{{movie.name}}</span>
+      <li *ngFor="let movie of movies | sortByDate: 'movdate'" [class.selected]="movie === selectedMovie" (click)="onSelect(movie)">
+        <span class="badge">{{movie.name}}</span>
       </li>
     </ul>
     <!--ul movies class ends-->

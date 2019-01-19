@@ -70,7 +70,7 @@ export const MOVIES: Movie[] = [{
   },
   {
     imageUrl: '/assets/posters/hansel_and_gretel.jpg',
-    name: 'Hansel and Gretel: Witch Hunters',
+    name: 'Hansel & Gretel: Witch Hunters',
     genre: 'Action',
     releaseDate: new Date(2013, 1, 25),
     rating: 'r',
